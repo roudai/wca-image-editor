@@ -25,13 +25,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  padding-top: 70px;
+  padding-top: 60px;
 }
 #download {
   text-align: center;
 }
 #canvas {
-  margin: 10px auto;
+  margin: 10px auto 10px;
   display: block;
 }
 label {
