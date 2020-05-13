@@ -9,91 +9,91 @@
     <FormatForm @change-format="changeFormat"></FormatForm>
     <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='Center Color' formid='uface0'></MegaminxColorForm>
     <label>U Face Color</label>
-    <div class="row">
-      <div class="col-xs-12 col-md-2">
+    <b-row>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='1' formid='uface1'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='2' formid='uface2'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='3' formid='uface3'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='4' formid='uface4'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='5' formid='uface5'></MegaminxColorForm>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='6' formid='uface6'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+    </b-row>
+    <div class="row">
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='7' formid='uface7'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='8' formid='uface8'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='9' formid='uface9'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lightgray' label='10' formid='uface10'></MegaminxColorForm>
-      </div>
+      </b-col>
     </div>
     <label>Side Face Color</label>
     <div class="row">
-      <div class="col-xs-12 col-md-2">
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='pink' label='1' formid='sface1'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='pink' label='2' formid='sface2'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='pink' label='3' formid='sface3'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lemonchiffon' label='4' formid='sface4'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lemonchiffon' label='5' formid='sface5'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lemonchiffon' label='6' formid='sface6'></MegaminxColorForm>
-      </div>
+      </b-col>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-2">
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='aqua' label='7' formid='sface7'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='aqua' label='8' formid='sface8'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='aqua' label='9' formid='sface9'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='orange' label='10' formid='sface10'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='orange' label='11' formid='sface11'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='orange' label='12' formid='sface12'></MegaminxColorForm>
-      </div>
+      </b-col>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-2">
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lawngreen' label='13' formid='sface13'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lawngreen' label='14' formid='sface14'></MegaminxColorForm>
-      </div>
-      <div class="col-xs-12 col-md-2">
+      </b-col>
+      <b-col cols="6" md="2">
         <MegaminxColorForm @change-color="changeColor" selected='lawngreen' label='15' formid='sface15'></MegaminxColorForm>
-      </div>
+      </b-col>
     </div>
     <MegaminxColorForm @change-color="changeColor" selected='black' label='Border Color' formid='bcolor'></MegaminxColorForm>
     <BackgroundForm @change-background="changeBackground"></BackgroundForm>
