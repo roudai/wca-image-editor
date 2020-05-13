@@ -1,14 +1,14 @@
 <template>
-  <div class="container">
-    <div id="app">
-      <myheader></myheader>
+  <div id="app">
+    <myheader></myheader>
+    <div class="container">
       <router-view/>
     </div>
   </div>
 </template>
 
 <script>
-import myheader from './components/myheader'
+import myheader from './components/common/myheader'
 
 export default {
   name: 'App',
@@ -23,6 +23,9 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body {
+  padding-top: 70px;
 }
 #download {
   text-align: center;
