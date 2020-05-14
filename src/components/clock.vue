@@ -5,7 +5,7 @@
     <label for="name">File Name</label>
     <input id="fileName" class ="form-control" type="text" v-model="filename">
     <label for="size">Size of generated image (width)</label>
-    <input id="imageSize" class="form-control" v-model.number="size" type="number" min="1" max="1024" step="1">
+    <input id="imageSize" class="form-control" v-model.number="size" type="number" min="100" max="1024" step="1">
     <FormatForm @change-format="changeFormat"></FormatForm>
     <label>Pins</label>
     <div class="row">
@@ -123,6 +123,12 @@ export default {
   },
   watch: {
     size () {
+      if (this.size === '') {
+        this.size = 400
+      }
+      if (this.size >= window.innerWidth) {
+        this.size = parseInt(window.innerWidth * 0.9)
+      }
       this.width = this.size
       this.height = this.size / 2
     }

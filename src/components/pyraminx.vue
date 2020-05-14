@@ -136,6 +136,12 @@ export default {
   },
   watch: {
     size () {
+      if (this.size === '') {
+        this.size = 200
+      }
+      if (this.size >= window.innerWidth) {
+        this.size = parseInt(window.innerWidth * 0.9)
+      }
       this.width = this.size
       this.height = this.size
     }
