@@ -20,7 +20,7 @@
       </b-col>
     </div>
     <label>Second Layer Color</label>
-    <div class="row">
+    <b-row>
       <b-col cols="6" md="2">
         <PyraminxColorForm @change-color="changeColor" selected='red' label='1' formid='second1'></PyraminxColorForm>
       </b-col>
@@ -39,8 +39,8 @@
       <b-col cols="6" md="2">
         <PyraminxColorForm @change-color="changeColor" selected='lawngreen' label='6' formid='second6'></PyraminxColorForm>
       </b-col>
-    </div>
-    <div class="row">
+    </b-row>
+    <b-row>
       <b-col cols="6" md="2">
         <PyraminxColorForm @change-color="changeColor" selected='dodgerblue' label='7' formid='second7'></PyraminxColorForm>
       </b-col>
@@ -50,9 +50,9 @@
       <b-col cols="6" md="2">
         <PyraminxColorForm @change-color="changeColor" selected='dodgerblue' label='9' formid='second9'></PyraminxColorForm>
       </b-col>
-    </div>
+    </b-row>
     <label>Third Layer Color</label>
-    <div class="row">
+    <b-row>
       <b-col cols="6" md="2">
         <PyraminxColorForm @change-color="changeColor" selected='red' label='1' formid='third1'></PyraminxColorForm>
       </b-col>
@@ -68,8 +68,8 @@
       <b-col cols="6" md="2">
         <PyraminxColorForm @change-color="changeColor" selected='red' label='5' formid='third5'></PyraminxColorForm>
       </b-col>
-    </div>
-    <div class="row">
+    </b-row>
+    <b-row>
       <b-col cols="6" md="2">
         <PyraminxColorForm @change-color="changeColor" selected='lawngreen' label='6' formid='third6'></PyraminxColorForm>
       </b-col>
@@ -85,8 +85,8 @@
       <b-col cols="6" md="2">
         <PyraminxColorForm @change-color="changeColor" selected='lawngreen' label='10' formid='third10'></PyraminxColorForm>
       </b-col>
-    </div>
-    <div class="row">
+    </b-row>
+    <b-row>
       <b-col cols="6" md="2">
         <PyraminxColorForm @change-color="changeColor" selected='dodgerblue' label='11' formid='third11'></PyraminxColorForm>
       </b-col>
@@ -102,7 +102,7 @@
       <b-col cols="6" md="2">
         <PyraminxColorForm @change-color="changeColor" selected='dodgerblue' label='15' formid='third15'></PyraminxColorForm>
       </b-col>
-    </div>
+    </b-row>
     <PyraminxColorForm @change-color="changeColor" selected='black' label='Border Color' formid='bcolor'></PyraminxColorForm>
     <BackgroundForm @change-background="changeBackground"></BackgroundForm>
   </div>

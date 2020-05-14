@@ -3,6 +3,7 @@ import BootstrapVue from 'bootstrap-vue'
 import Router from 'vue-router'
 import Megaminx from '@/components/megaminx'
 import Pyraminx from '@/components/pyraminx'
+import Clock from '@/components/clock'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/pyraminx',
       name: 'pyraminx',
       component: Pyraminx
+    },
+    {
+      path: '/clock',
+      name: 'clock',
+      component: Clock
     }
   ]
 })
