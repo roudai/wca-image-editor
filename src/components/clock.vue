@@ -7,18 +7,18 @@
     <label for="size">Size of generated image (width)</label>
     <input id="imageSize" class="form-control" v-model.number="size" type="number" min="100" max="1024" step="1">
     <FormatForm @change-format="changeFormat"></FormatForm>
-    <label>Pins</label>
+    <label>Pin</label>
     <div class="row">
-      <b-col cols="3">
+      <b-col cols="6" md="3">
         <ClockPinForm @change-pin="changePin" label='t-l' formid='pin1'></ClockPinForm>
       </b-col>
-      <b-col cols="3">
+      <b-col cols="6" md="3">
         <ClockPinForm @change-pin="changePin" label='t-r' formid='pin2'></ClockPinForm>
       </b-col>
-      <b-col cols="3">
+      <b-col cols="6" md="3">
         <ClockPinForm @change-pin="changePin" label='b-l' formid='pin3'></ClockPinForm>
       </b-col>
-      <b-col cols="3">
+      <b-col cols="6" md="3">
         <ClockPinForm @change-pin="changePin" label='b-r' formid='pin4'></ClockPinForm>
       </b-col>
     </div>
