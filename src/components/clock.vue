@@ -7,7 +7,7 @@
     <label for="size">Size of generated image (width)</label>
     <input id="imageSize" class="form-control" v-model.number="size" type="number" min="100" max="1024" step="1">
     <FormatForm @change-format="changeFormat"></FormatForm>
-    <label>Pin</label>
+    <label>Pegs</label>
     <div class="row">
       <b-col cols="6" md="3">
         <ClockPinForm @change-pin="changePin" label='t-l' formid='pin1'></ClockPinForm>
@@ -22,7 +22,7 @@
         <ClockPinForm @change-pin="changePin" label='b-r' formid='pin4'></ClockPinForm>
       </b-col>
     </div>
-    <label>Front Clock</label>
+    <label>Front Dials</label>
     <div class="row">
       <b-col cols="4">
         <ClockForm @change-clock="changeClock" label='t-l' formid='front1'></ClockForm>
@@ -56,7 +56,7 @@
         <ClockForm @change-clock="changeClock" label='b-r' formid='front9'></ClockForm>
       </b-col>
     </div>
-    <label>Back Clock</label>
+    <label>Back Dials</label>
     <div class="row">
       <b-col cols="4">
         <ClockForm @change-clock="changeClock" label='t-l' formid='back1'></ClockForm>

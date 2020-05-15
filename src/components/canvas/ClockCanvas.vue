@@ -119,34 +119,45 @@ export default {
       var x
       if (face === 'front') {
         x = this.origin1
+        this.ctx.fillStyle = this.pincolor(this.pin.substr(0, 1), face)
+        this.drawCircle(x - this.gap * 0.5, this.origin1 - this.gap * 0.5, this.radius4)
+        this.ctx.fillStyle = this.pincolor(this.pin.substr(1, 1), face)
+        this.drawCircle(x + this.gap * 0.5, this.origin1 - this.gap * 0.5, this.radius4)
+        this.ctx.fillStyle = this.pincolor(this.pin.substr(2, 1), face)
+        this.drawCircle(x - this.gap * 0.5, this.origin1 + this.gap * 0.5, this.radius4)
+        this.ctx.fillStyle = this.pincolor(this.pin.substr(3, 1), face)
+        this.drawCircle(x + this.gap * 0.5, this.origin1 + this.gap * 0.5, this.radius4)
       } else if (face === 'back') {
         x = this.origin2
+        this.ctx.fillStyle = this.pincolor(this.pin.substr(0, 1), face)
+        this.drawCircle(x + this.gap * 0.5, this.origin1 - this.gap * 0.5, this.radius4)
+        this.ctx.fillStyle = this.pincolor(this.pin.substr(1, 1), face)
+        this.drawCircle(x - this.gap * 0.5, this.origin1 - this.gap * 0.5, this.radius4)
+        this.ctx.fillStyle = this.pincolor(this.pin.substr(2, 1), face)
+        this.drawCircle(x + this.gap * 0.5, this.origin1 + this.gap * 0.5, this.radius4)
+        this.ctx.fillStyle = this.pincolor(this.pin.substr(3, 1), face)
+        this.drawCircle(x - this.gap * 0.5, this.origin1 + this.gap * 0.5, this.radius4)
       }
-      this.ctx.fillStyle = this.pincolor(this.pin.substr(0, 1), face)
-      this.drawCircle(x - this.gap * 0.5, this.origin1 - this.gap * 0.5, this.radius4)
-      this.ctx.fillStyle = this.pincolor(this.pin.substr(1, 1), face)
-      this.drawCircle(x + this.gap * 0.5, this.origin1 - this.gap * 0.5, this.radius4)
-      this.ctx.fillStyle = this.pincolor(this.pin.substr(2, 1), face)
-      this.drawCircle(x - this.gap * 0.5, this.origin1 + this.gap * 0.5, this.radius4)
-      this.ctx.fillStyle = this.pincolor(this.pin.substr(3, 1), face)
-      this.drawCircle(x + this.gap * 0.5, this.origin1 + this.gap * 0.5, this.radius4)
     },
     drawClock (face) {
       var x
+      var clock
       if (face === 'front') {
         x = this.origin1
+        clock = this.fclock
       } else if (face === 'back') {
         x = this.origin2
+        clock = this.bclock
       }
-      this.drawNeedle(x - this.gap, this.origin1 - this.gap, this.fclock.substr(0, 1))
-      this.drawNeedle(x, this.origin1 - this.gap, this.fclock.substr(1, 1))
-      this.drawNeedle(x + this.gap, this.origin1 - this.gap, this.fclock.substr(2, 1))
-      this.drawNeedle(x - this.gap, this.origin1, this.fclock.substr(3, 1))
-      this.drawNeedle(x, this.origin1, this.fclock.substr(4, 1))
-      this.drawNeedle(x + this.gap, this.origin1, this.fclock.substr(5, 1))
-      this.drawNeedle(x - this.gap, this.origin1 + this.gap, this.fclock.substr(6, 1))
-      this.drawNeedle(x, this.origin1 + this.gap, this.fclock.substr(7, 1))
-      this.drawNeedle(x + this.gap, this.origin1 + this.gap, this.fclock.substr(8, 1))
+      this.drawNeedle(x - this.gap, this.origin1 - this.gap, clock.substr(0, 1))
+      this.drawNeedle(x, this.origin1 - this.gap, clock.substr(1, 1))
+      this.drawNeedle(x + this.gap, this.origin1 - this.gap, clock.substr(2, 1))
+      this.drawNeedle(x - this.gap, this.origin1, clock.substr(3, 1))
+      this.drawNeedle(x, this.origin1, clock.substr(4, 1))
+      this.drawNeedle(x + this.gap, this.origin1, clock.substr(5, 1))
+      this.drawNeedle(x - this.gap, this.origin1 + this.gap, clock.substr(6, 1))
+      this.drawNeedle(x, this.origin1 + this.gap, clock.substr(7, 1))
+      this.drawNeedle(x + this.gap, this.origin1 + this.gap, clock.substr(8, 1))
     },
     drawCircle: function (x, y, r) {
       this.ctx.beginPath()
