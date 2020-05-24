@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-cloak>
     <myheader></myheader>
     <div class="container">
       <router-view/>
@@ -24,6 +24,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+[v-cloak] {
+  display: none;
+}
 body {
   padding-top: 60px;
 }
@@ -36,5 +39,15 @@ body {
 }
 label {
   margin: 0.5em 0 0 0;
+}
+#visualcube img {
+  margin: 10px auto 10px;
+  display: block;
+}
+input[type="color" i] {
+    -webkit-appearance: square-button;
+    width: 100%;
+    height: 38px;
+    display: block;
 }
 </style>

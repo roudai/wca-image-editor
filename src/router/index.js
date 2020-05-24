@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import Router from 'vue-router'
+import Cube from '@/components/cube'
 import Megaminx from '@/components/megaminx'
 import Pyraminx from '@/components/pyraminx'
 import Clock from '@/components/clock'
@@ -13,8 +14,9 @@ Vue.use(BootstrapVue)
 export default new Router({
   routes: [
     {
-      path: '/',
-      redirect: '/megaminx'
+      path: '/cube',
+      name: 'cube',
+      component: Cube
     },
     {
       path: '/megaminx',
