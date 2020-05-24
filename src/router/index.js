@@ -14,6 +14,10 @@ Vue.use(BootstrapVue)
 export default new Router({
   routes: [
     {
+      path: '/',
+      redirect: '/cube'
+    },
+    {
       path: '/cube',
       name: 'cube',
       component: Cube
